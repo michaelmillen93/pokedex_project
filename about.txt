@@ -1,0 +1,7 @@
+This project is to build a functional recreation of the original Pokedex from Gold, Silver, and Crystal, including using sprites, searching by name/type
+
+USER STORIES
+
+1. User can search by type 1 and type 2
+2. User can sort Pokedex alphabetically
+3. User can scroll through the Pokedex with buttons or with a scrollbar

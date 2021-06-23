@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="pokedex.js"></script>
+    <script
+      src="https://kit.fontawesome.com/40264978fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokedex Project | Gen 2</title>
+  </head>
+  <body>
+    <div class="pokedex-container">
+      <div class="column-1">
+        <div id="sprite-container" class="sprite-container">
+          <!-- <div id="sprite" class="sprite"></div> -->
+        </div>
+
+        <div id="seen-container" class="seen-container">
+          <h2 class="seen">SEEN</h2>
+          <span class="total">115</span>
+          <h2>OWN</h2>
+          <span class="total">34</span>
+        </div>
+      </div>
+
+      <div class="column-2">
+        <div class="entry-container">
+          <div class="arrow-up">
+            <button id="prev" class="arrow arrow-up">
+              <i class="fas fa-caret-up fa-2x"></i>
+            </button>
+          </div>
+
+          <ul id="entries-list" class="entries-list">
+            <!-- <li class="entry">BULBASAUR</li>
+            <li class="entry">Ivysaur</li>
+            <li class="entry">Venasaur</li>
+            <li class="entry">Squirtle</li> -->
+          </ul>
+
+          <div class="arrow-down">
+            <button id="next" class="arrow arrow-down">
+              <i class="fas fa-caret-down fa-2x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button id="search" class="btn btn-search">
+        START <i class="fas fa-caret-right"></i> SEARCH
+      </button>
+
+      <button id="option" class="btn btn-option">
+        SELECT <i class="fas fa-caret-right"></i> OPTION
+      </button>
+
+      <div class="modal hidden">
+        <div class="type type-1">
+          <label for="type-1">TYPE1</label>
+          <i class="fas fa-caret-left fa-2x"></i>
+          <h3 id="type-1">NORMAL</h3>
+          <i class="fas fa-caret-right fa-2x"></i>
+        </div>
+
+        <div class="type type-2">
+          <label for="type-2">TYPE2</label>
+          <i class="fas fa-caret-left fa-2x"></i>
+          <h3 id="type-2">-----</h3>
+          <i class="fas fa-caret-right fa-2x"></i>
+        </div>
+
+        <div class="slowpoke"></div>
+        <div class="begin-search">BEGIN SEARCH!</div>
+        <div class="cancel">CANCEL</div>
+      </div>
+    </div>
+  </body>
+</html>
